@@ -1,4 +1,4 @@
-const configClock =  {
+configClock =  {
     displayType: "digital", // options: digital, analog, both
     timeFormat: 24,
     displaySeconds: true,
@@ -20,10 +20,11 @@ const configClock =  {
 
 
 setInterval(function() {
-    getDom();
+    getDomClock();
 }, 1000);
 
-function getDom() {
+
+function getDomClock() {
 
     var wrapper = document.createElement("div");
 
@@ -215,6 +216,5 @@ function getDom() {
 
     // Return the wrapper to the dom.
     $('.region.top.left').html(wrapper);
-    //return wrapper;
     
 }

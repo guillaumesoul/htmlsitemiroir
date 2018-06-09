@@ -538,6 +538,7 @@ Module.register("currentweather",{
 			return "SE";
 		} else if (deg > 146.25 && deg <= 168.75) {
 			return "SSE";
+
 		} else if (deg > 168.75 && deg <= 191.25) {
 			return "S";
 		} else if (deg > 191.25 && deg <= 213.75) {
